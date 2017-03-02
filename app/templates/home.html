@@ -1,7 +1,16 @@
-<section>
-    <h1>Homepage</h1>
-</section>
+<!--<div class="container">-->
+    <section class="chat-app row-fluid">
 
-<section ng-repeat="room in rooms">
-    <h1>{{room.$value}}</h1>
-</section>
+        <nav class="span2 side-nav">
+            <h1 class="hero-title">Let's Chat, Yo!</h1>
+
+            <section ng-repeat="room in rooms">
+                <ul class="room-list"><a>{{room.$value}}</a></ul>
+            </section>
+        </nav>
+
+        <section class="span10 chat-container">
+            <p> placeholder</p>
+        </section>
+    </section>
+<!--</div>-->

@@ -1,0 +1,72 @@
+
+/*Global Styles*/
+
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body {
+    min-height: 100%;
+    width: 100%;
+    background-color: dimgray;
+}
+
+body {
+    display: table;
+}
+
+a {
+    color: #f15a24;
+}
+
+/*Top header Section*/
+
+.top-header-bar {
+    background-color: #333333;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+/*Side Nav*/
+
+.side-nav {
+    display: table-cell;
+    position: relative;
+    background-color: dimgray;
+    margin-left: 0;
+    height: 80%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hero-title {
+    font-size: 1.75rem;
+    font-weight: normal;
+    color: #fff;
+    line-height: 72px;
+    margin-bottom: 20px;
+    padding-left: 1rem;
+}
+
+.room-list {
+    font-size: 1.45rem;
+    font-weight: normal;
+    line-height: 2rem;
+    color: #fff;
+}
+
+/*Chat Container*/
+
+
+
+.chat-container {
+    position: relative;
+    height: 80%;
+    background-color: #fff;
+}
