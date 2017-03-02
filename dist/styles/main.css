@@ -39,9 +39,9 @@ a {
     position: relative;
     background-color: dimgray;
     margin-left: 0;
-    height: 100vh;
     z-index: 1;
     cursor: pointer;
+    padding-bottom: 40px;
 }
 
 .hero-title {
@@ -49,7 +49,6 @@ a {
     font-weight: normal;
     color: #fff;
     line-height: 72px;
-    margin-bottom: 20px;
     padding-left: 1rem;
 }
 
@@ -66,9 +65,20 @@ a {
 
 .chat-container {
     position: relative;
-    height: 80vh;
     background-color: #fff;
 }
 
 /*responsive*/
 
+/* large desktop */
+@media (min-width: 770px) { 
+    .side-nav {
+        height: 100vh;
+    }
+    .room-list {
+    }
+    .chat-container {
+        height: 80vh;
+    }
+
+}
