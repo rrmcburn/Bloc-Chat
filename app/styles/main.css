@@ -20,6 +20,8 @@ a {
     color: #f15a24;
 }
 
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 /*Top header Section*/
 
 .top-header-bar {
