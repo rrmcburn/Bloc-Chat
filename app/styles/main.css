@@ -20,6 +20,10 @@ a {
     color: #f15a24;
 }
 
+a:hover {
+    color: #333333;
+}
+
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 /*Top header Section*/
@@ -36,6 +40,45 @@ a {
 
 /*Side Nav*/
 
+.hero-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #fff;
+    line-height: 20px;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.orange-button {
+    background-color: #f15a24;
+    font-family: 'Roboto', sans-serif;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 0;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.orange-button:hover {
+    background: #333333;
+    text-decoration: none;
+}
+
+.room-list {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    font-weight: normal;
+    line-height: 2rem;
+    color: #fff;
+}
+
 .side-nav {
     display: table-cell;
     position: relative;
@@ -46,21 +89,22 @@ a {
     padding-bottom: 40px;
 }
 
-.hero-title {
+/*Modal*/
+
+.modal {
+    max-width: 80% !important;
+}
+
+.modal-header {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    font-weight: normal;
-    color: #fff;
-    line-height: 72px;
-    padding-left: 1rem;
+    font-weight: bold;
+    color: #333333;
 }
 
-.room-list {
-    font-size: 1.15rem;
-    font-weight: normal;
-    line-height: 2rem;
-    color: #fff;
+.modal-footer {
+    text-align: left;
 }
-
 /*Chat Container*/
 
 

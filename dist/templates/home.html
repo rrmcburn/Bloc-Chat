@@ -4,9 +4,10 @@
     <nav class="span3 side-nav">
         <h1 class="hero-title">Let's Chat, Yo!</h1>
 
-        <section ng-repeat="room in rooms">
-            <ul class="room-list"><a>{{room.$value}}</a></ul>
+        <section ng-repeat="room in rooms" class="room-list">
+            <ul><a>{{room.$value}}</a></ul>
         </section>
+        <button class="orange-button" ng-click="open()">Add A New Room</button>
     </nav>
 
     <section class="span9 chat-container">
