@@ -12,6 +12,6 @@
 
     <section class="span9 chat-container">
         <h2>{{activeRoom.$value}}</h2>
-        <p>placeholder</p>
+        <ul class="messages" ng-repeat="message in messages">{{message.content}}</ul>
     </section>
 </section>
