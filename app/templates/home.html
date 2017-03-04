@@ -5,12 +5,13 @@
         <h1 class="hero-title">Let's Chat, Yo!</h1>
 
         <section ng-repeat="room in rooms" class="room-list">
-            <ul><a>{{room.$value}}</a></ul>
+            <ul><a ng-click="activeRoomSet(room)">{{room.$value}}</a></ul>
         </section>
         <button class="orange-button" ng-click="open()">Add A New Room</button>
     </nav>
 
     <section class="span9 chat-container">
-        <p> placeholder</p>
+        <h2>{{activeRoom.$value}}</h2>
+        <p>placeholder</p>
     </section>
 </section>
