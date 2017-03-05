@@ -26,6 +26,14 @@ a:hover {
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333333;
+    padding-left: 1.2rem; 
+}
+
 /*Top header Section*/
 
 .top-header-bar {
@@ -105,14 +113,36 @@ a:hover {
 .modal-footer {
     text-align: left;
 }
-/*Chat Container*/
-
-
+/*Chat Container and Messages*/
 
 .chat-container {
     position: relative;
     background-color: #fff;
 }
+
+.messages {
+    padding: 1rem 0 1rem 2rem;
+    overflow: auto;
+    width: 100%;
+}
+
+.messages:nth-child(even) {
+    background-color: aliceblue;
+}
+
+.message-time {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.username { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+
 
 /*responsive*/
 

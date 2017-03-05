@@ -12,6 +12,14 @@
 
     <section class="span9 chat-container">
         <h2>{{activeRoom.$value}}</h2>
-        <ul class="messages" ng-repeat="message in messages">{{message.content}}</ul>
+        <div class="messages" ng-repeat="message in messages">
+            <div class="clearfix">
+                <div class="span10">
+                    <div class="username">{{message.username}}</div>
+                    <div class="message-text">{{message.content}}</div>
+                </div>
+                <div class="span2 message-time">{{message.sentAt}}</div>
+            </div>    
+        </div>
     </section>
 </section>
