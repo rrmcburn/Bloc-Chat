@@ -14,11 +14,11 @@
         <h2>{{activeRoom.$value}}</h2>
         <div class="messages" ng-repeat="message in messages">
             <div class="clearfix">
-                <div class="span10">
-                    <div class="username">{{message.username}}</div>
+                <div class="span12">
+                    <div class="username">{{message.username}}<span class="message-time">{{message.sentAt}}</span></div>
                     <div class="message-text">{{message.content}}</div>
                 </div>
-                <div class="span2 message-time">{{message.sentAt}}</div>
+<!--                <div class="span2 message-time">{{message.sentAt}}</div>-->
             </div>    
         </div>
     </section>

@@ -131,7 +131,9 @@ h2 {
 }
 
 .message-time {
-    text-align: center;
+    float: right;
+    text-align: right;
+    margin-right: 3rem;
     vertical-align: middle;
 }
 
