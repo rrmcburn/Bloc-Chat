@@ -2,7 +2,7 @@
 <section class="chat-app row-fluid">
 
     <nav class="span3 side-nav">
-        <h1 class="hero-title">Let's Chat, Yo!</h1>
+        <h1 class="hero-title">Welcome to Bloc Chat!</h1>
 
         <section ng-repeat="room in rooms" class="room-list">
             <ul><a ng-click="activeRoomSet(room)">{{room.$value}}</a></ul>
@@ -18,7 +18,6 @@
                     <div class="username">{{message.username}}<span class="message-time">{{message.sentAt}}</span></div>
                     <div class="message-text">{{message.content}}</div>
                 </div>
-<!--                <div class="span2 message-time">{{message.sentAt}}</div>-->
             </div>    
         </div>
     </section>

@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl($scope, $uibModal, $cookies, BlocChatCookies, Room, Message) {
+    function HomeCtrl($scope, Room, Message, $uibModal, $cookies) {
       $scope.rooms = Room.all;
       $scope.activeRoom = null;
       $scope.roomName = null;     
@@ -18,6 +18,7 @@
       $scope.activeRoomSet = function(room) {
           $scope.activeRoom = room;
           $scope.roomName = room.name;
+          $scope.userName = $cookies.get('currentChatUser');
           $scope.messages = Message.getByRoomId(room.$id);
       }
       
@@ -25,5 +26,5 @@
     
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['$scope', '$uibModal', '$cookies', 'BlocChatCookies', 'Room', 'Message', HomeCtrl] );
+        .controller('HomeCtrl', ['$scope',  'Room', 'Message', '$uibModal', '$cookies', HomeCtrl] );
 })();
