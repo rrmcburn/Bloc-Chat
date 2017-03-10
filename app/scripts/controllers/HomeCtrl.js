@@ -22,6 +22,11 @@
           $scope.messages = Message.getByRoomId(room.$id);
       }
       
+      $scope.newMessage = function (newMessageText) {
+          Message.send(newMessageText, $scope.activeRoom.$id);
+          $scope.newMessageText = null;
+      }
+      
     }
     
     angular
