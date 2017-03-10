@@ -164,6 +164,7 @@ h2 {
     margin-bottom: 0;
     height: 40px;
     border-bottom: 0;
+    margin-left: 2rem;
 }
 
 .message-box .orange-button {
@@ -203,6 +204,7 @@ h2 {
     .message-box input {
         width: 100%;
         padding: 10px;
+        margin-left: 0;
     }
     
 }
