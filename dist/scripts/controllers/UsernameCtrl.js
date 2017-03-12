@@ -3,8 +3,13 @@
         
         $scope.newUsername = function () {
             $cookies.put('currentChatUser', $scope.usernameText);
-            $uibModalInstance.close();
-            }
+            
+            if ($scope.usernameText.length > 0) {
+                $uibModalInstance.close();
+            } else {
+                uibModalInstance.dismiss();
+            };
+    }
     }
 
     angular
